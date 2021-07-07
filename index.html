@@ -21,23 +21,28 @@
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
-  <script>
-    $(function () {
-    })
-  </script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 <body>
+
 <header>
   <div class="overlay-dark"></div>
   <div class="title-container">
     <div class="title">
       <h1>JARAM</h1>
       <p>안녕하세요. 한양대학교 ERICA 캠퍼스 소프트웨어융합대학 전공학회 자람입니다.</p>
-      <a href="#introduce" class="ui inverted olive button push-top">더 알아보기</a>
+      <button class="ui inverted olive button push-top" onclick="vidshow()">더 알아보기</button>
     </div>
   </div>
+  
+  <div>
+  <img id="close" src="img/close.png" onclick="vidclose()">
+    <video id="mainvid" src="jaram107s.mp4" poster="img/poster.jpg" controls preload muted></video>
+    
+  </div>
   <a href="#introduce"><img id="about-icon" src="img/icon/hello.svg"></a>
+  
+  <!-- 여기에 X 표시 이미지 삽입 -->
 </header>
 <section id="introduce" class="accent">
   <div class="ui container">
@@ -48,6 +53,11 @@
     </p>
   </div>
 </section>
+<!-- <section id="invro_vidio">
+  <div class="ui container">
+    <video src="jaram107s.mp4" poster="img/poster.jpg" width="1200" height="500" autoplay controls preload muted></video>
+  </div>
+</section> -->
 <section id="activity">
   <h1>자람은 기초부터 전문 능력까지 기를 수 있는 학회입니다.</h1>
   <p>
@@ -205,5 +215,6 @@
     </div>
   </div>
 </section>
+<script src="js/common.js"></script>
 </body>
 </html>
