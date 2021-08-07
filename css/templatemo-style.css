@@ -550,6 +550,9 @@ a#logo {
 .services-list .item:hover {
   background-color: #fff;
   color: #1e1e1e;
+}  
+ .service-box:hover .custom-icon {
+  filter: invert();
 }
 .service-box h3 {
   font-size:22px;
