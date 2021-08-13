@@ -777,6 +777,14 @@ textarea.form-control {
   font-size: 25px;
 }
 
+.contact-container {
+  justify-content: center;
+}
+
+.col-md-6.animated.fadeInUp {
+  min-width: 60%;
+}
+
 /*==============================================
 09. TESTIMONOALS BLOCK CSS
 ================================================*/
